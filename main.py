@@ -1,5 +1,5 @@
 import random
-import telebot
+from telebot import TeleBot
 import webbrowser
 from telebot import types
 
@@ -7,7 +7,7 @@ from telebot import types
 # Удали 6 и 7 строчки и вместо переменной mytoken в 10 строчке напиши свой токен
 # Пример: bot = telebot.TeleBot('62732:RyJidSDIdi...')
 # Передаем сюда токен, который получили от FatherBot
-bot = telebot.TeleBot('6476456021:AAGemCFA4IkhQbJKh_OTdIheJTm_VU96LJo')
+bot = TeleBot.TeleBot('6476456021:AAGemCFA4IkhQbJKh_OTdIheJTm_VU96LJo')
 
 # Варианты ответов пользователю, если тот ввел непонятное боту сообщение
 answers = ['Я не понял, что ты хочешь сказать.', 'Извини, я тебя не понимаю.',
