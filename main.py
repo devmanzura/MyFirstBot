@@ -59,6 +59,8 @@ def info(message):
         button1 = types.KeyboardButton('💳 Купить')
         button2 = types.KeyboardButton('↩️ Назад')
         markup.row(button1, button2)
+        photo = open('dark.jpg', 'rb')
+        bot.send_photo(message.chat.id, photo)
         bot.send_message(
             message.chat.id, 'Информация о первом товаре...', reply_markup=markup)
     elif message.text == '🔹 Товар #2':
@@ -66,6 +68,8 @@ def info(message):
         button1 = types.KeyboardButton('💳 Купить')
         button2 = types.KeyboardButton('↩️ Назад')
         markup.row(button1, button2)
+        photo = open('kast.jpg', 'rb')
+        bot.send_photo(message.chat.id, photo)
         bot.send_message(
             message.chat.id, 'Информация о втором товаре...', reply_markup=markup)
     elif message.text == '🔹 Товар #3':
@@ -73,6 +77,8 @@ def info(message):
         button1 = types.KeyboardButton('💳 Купить')
         button2 = types.KeyboardButton('↩️ Назад')
         markup.row(button1, button2)
+        photo = open('pidjak.jpg', 'rb')
+        bot.send_photo(message.chat.id, photo)
         bot.send_message(
             message.chat.id, 'Информация о третьем товаре...', reply_markup=markup)
     elif message.text == '🔹 Товар #4':
@@ -80,6 +86,8 @@ def info(message):
         button1 = types.KeyboardButton('💳 Купить')
         button2 = types.KeyboardButton('↩️ Назад')
         markup.row(button1, button2)
+        photo = open('suit.jpg', 'rb')
+        bot.send_photo(message.chat.id, photo)
         bot.send_message(
             message.chat.id, 'Информация о четвертом товаре...', reply_markup=markup)
     elif message.text == '⚙️ Настройки #1':
@@ -90,7 +98,7 @@ def info(message):
         bot.send_message(message.chat.id, 'Настройки номер 2...')
     elif message.text == '💳 Купить' or message.text == '✏️ Написать разработчику':
         # Сюда можете ввести свою ссылку на Телеграмм, тогда пользователя будет перекидывать к вам в личку
-        webbrowser.open('https://t.me/opopee')
+        webbrowser.open('https://t.me/niyman1')
     elif message.text == '↩️ Назад':
         goodsChapter(message)
     elif message.text == '↩️ Назад в меню':
