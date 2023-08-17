@@ -24,8 +24,8 @@ def welcome(message):
     button2 = types.KeyboardButton('⚙️ Настройки')
     button3 = types.KeyboardButton('📄 Справка')
     # Разделяю кнопки по строкам так, чтобы товары были отдельно от остальных кнопок
-    markup.row(button1)
-    markup.row(button2, button3)
+    markup.row(button1, button2)
+    markup.row(button3)
 
     if message.text == '/start':
         # Отправляю приветственный текст
